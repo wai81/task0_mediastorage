@@ -1,14 +1,16 @@
-﻿using System;
+﻿using mediastorage.Enums;
+using mediastorage.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace mediastorage
+namespace mediastorage.Classes
 {
-    public class MediaFile : BaseMediaStorage
+    public class MediaFile : BaseMediaStorage, IMediaFile
     {
 
-       
+
         public FileInfo File { get; private set; }
         public TypeMediaFile TypeFile { get; private set; }
 
@@ -22,7 +24,7 @@ namespace mediastorage
         private dynamic GetTypeFile(FileInfo file)
         {
 
-           string _typeFile = file.Extension.ToLower();
+            string _typeFile = file.Extension.ToLower();
             if (_typeFile == ".mp3")
             {
                 return TypeMediaFile.Music;
@@ -32,36 +34,31 @@ namespace mediastorage
                 return TypeMediaFile.Image;
             }
             else if (_typeFile == ".avi" || _typeFile == ".mpg" || _typeFile == ".mp4")
-            {                
+            {
                 return TypeMediaFile.Movie;
             }
             else
                 return null;
         }
 
-        private MediaFile GetFileById(Guid id)
+
+        public List<MediaFile> GetListByTypeFile(TypeMediaFile typeFile)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public List<MediaFile> GetListByTypeFile(TypeMediaFile typeFile) 
+        public List<MediaFile> GetAllFiles()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public List<MediaFile> GetListAllFiles()
-        {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public List<PlayList> SeachFile(string name)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void PlayFile(Guid id)
+        public void PlayFile(MediaFile file)
         {
-            MediaFile file = GetFileById(id);   
 
             if (file.TypeFile == TypeMediaFile.Music || file.TypeFile == TypeMediaFile.Movie)
             {
@@ -75,12 +72,22 @@ namespace mediastorage
 
         private void RunViewFile(MediaFile file)
         {
-            throw new NotImplementedException();
+
         }
 
         private void RunPlayFile(MediaFile file)
         {
+
+        }
+
+        public MediaFile AddFile(string nameFile)
+        {
             throw new NotImplementedException();
+        }
+
+        public void RemoveFile(MediaFile file)
+        {
+
         }
     }
 }

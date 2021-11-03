@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace mediastorage
+namespace mediastorage.Enums
 {
-    public enum FileCategory
+    public enum TypeMediaFile
     {
-        None = 0,
         Music,
-        Move,
+        Movie,
         Image
     }
 }
