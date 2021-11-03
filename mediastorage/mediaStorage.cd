@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="mediastorage.PlayList">
-    <Position X="2.75" Y="3" Width="1.5" />
+    <Position X="3" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACIAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>PlayList.cs</FileName>
@@ -24,20 +24,15 @@
       <FileName>MediaFile.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="File" />
       <Property Name="TypeFile" />
     </ShowAsAssociation>
-  </Class>
-  <Class Name="System.IO.FileInfo" Collapsed="true">
-    <Position X="9" Y="3.25" Width="1.5" />
-    <TypeIdentifier />
   </Class>
   <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
     <Position X="0.75" Y="2" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Enum Name="mediastorage.TypeMediaFile">
-    <Position X="9" Y="3" Width="1.5" />
+    <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>TypeMediaFile.cs</FileName>

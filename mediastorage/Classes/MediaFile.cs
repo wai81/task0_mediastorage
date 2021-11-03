@@ -12,37 +12,37 @@ namespace mediastorage.Classes
 
 
         public FileInfo File { get; private set; }
-        public TypeMediaFile TypeFile { get; private set; }
+        public Category Category { get; private set; }
 
         public MediaFile(string nameFile)
         {
             NameFile = nameFile;
             File = new FileInfo(nameFile);
-            TypeFile = GetTypeFile(File);
+            Category = GetTypeFile(File);
         }
 
         private dynamic GetTypeFile(FileInfo file)
         {
+            string typeFile = file.Extension.ToLower();
 
-            string _typeFile = file.Extension.ToLower();
-            if (_typeFile == ".mp3")
+            if (typeFile == ".mp3" || typeFile == ".wav")
             {
-                return TypeMediaFile.Music;
+                return Category.Music;
             }
-            else if (_typeFile == ".jpg" || _typeFile == ".png" || _typeFile == ".jpeg")
+            else if (typeFile == ".jpg" || typeFile == ".png" || typeFile == ".jpeg")
             {
-                return TypeMediaFile.Image;
+                return Category.Image;
             }
-            else if (_typeFile == ".avi" || _typeFile == ".mpg" || _typeFile == ".mp4")
+            else if (typeFile == ".avi" || typeFile == ".mpg" || typeFile == ".mp4")
             {
-                return TypeMediaFile.Movie;
+                return Category.Movie;
             }
             else
                 return null;
         }
 
 
-        public List<MediaFile> GetListByTypeFile(TypeMediaFile typeFile)
+        public List<MediaFile> GetListByTypeFile(Category category)
         {
             throw new NotImplementedException();
         }
@@ -60,11 +60,11 @@ namespace mediastorage.Classes
         public void PlayFile(MediaFile file)
         {
 
-            if (file.TypeFile == TypeMediaFile.Music || file.TypeFile == TypeMediaFile.Movie)
+            if (file.TypeFile == Category.Music || file.TypeFile == Category.Movie)
             {
                 RunPlayFile(file);
             }
-            else if (file.TypeFile == TypeMediaFile.Image)
+            else if (file.TypeFile == Category.Image)
             {
                 RunViewFile(file);
             }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace mediastorage.Enums
 {
-    public enum TypeMediaFile
+    public enum Category
     {
         Music,
         Movie,

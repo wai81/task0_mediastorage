@@ -11,12 +11,12 @@ namespace mediastorage.Classes
 
         public string Name { get; set; }
 
-        public ICollection<MediaFile> ItemsList { get; set; }
+        public ICollection<MediaFile> Files { get; private set; }
 
         public PlayList(string name)
         {
             Name = name;
-            ItemsList = new List<MediaFile>();
+            Files = new List<MediaFile>();
         }
 
         public List<PlayList> GetAllPlayLists()

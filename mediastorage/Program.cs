@@ -11,9 +11,9 @@ namespace mediastorage
             MediaFile image = new MediaFile(nameFile: "Image.jpeg");
             MediaFile video = new MediaFile(nameFile: "Film.avi");
 
-            Console.WriteLine(music.TypeFile);
-            Console.WriteLine(image.TypeFile);
-            Console.WriteLine(video.TypeFile);
+            Console.WriteLine(music.Category);
+            Console.WriteLine(image.Category);
+            Console.WriteLine(video.Category);
 
             PlayList pl = new PlayList(name: "My play list");
 
