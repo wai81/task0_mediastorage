@@ -1,9 +1,9 @@
-﻿using mediastorage.Interfaces;
+﻿using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace mediastorage.Classes
+namespace MediaStorage.Classes
 {
     public class PlayList : IPlayList
     {
@@ -43,7 +43,5 @@ namespace mediastorage.Classes
         {
             throw new NotImplementedException();
         }
-
-
     }
 }

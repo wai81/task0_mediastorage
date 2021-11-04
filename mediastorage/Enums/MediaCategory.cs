@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace mediastorage.Enums
+namespace MediaStorage.Enums
 {
     public enum MediaCategory
     {

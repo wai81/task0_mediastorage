@@ -1,13 +1,13 @@
-﻿using mediastorage.Classes;
+﻿using MediaStorage.Classes;
 using System;
 
-namespace mediastorage
+namespace MediaStorage
 {
     class Program
     {
         static void Main(string[] args)
         {
-            MediaFile music = new MediaFile(nameFile:"Song.mp3");
+            MediaFile music = new MediaFile(nameFile: "Song.mp3");
             MediaFile image = new MediaFile(nameFile: "Image.jpeg");
             MediaFile video = new MediaFile(nameFile: "Film.avi");
 
@@ -20,8 +20,6 @@ namespace mediastorage
             Console.WriteLine(pl.Name);
 
             Console.ReadLine();
-
-            
         }
     }
 }

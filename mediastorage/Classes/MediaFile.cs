@@ -1,17 +1,16 @@
-﻿using mediastorage.Enums;
-using mediastorage.Interfaces;
+﻿using MediaStorage.Enums;
+using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace mediastorage.Classes
+namespace MediaStorage.Classes
 {
     public class MediaFile : BaseMediaStorage, IMediaFile
     {
-
-
         public FileInfo File { get; private set; }
+
         public MediaCategory Category { get; private set; }
 
         public MediaFile(string nameFile)
@@ -41,7 +40,6 @@ namespace mediastorage.Classes
                 return null;
         }
 
-
         public List<MediaFile> GetListByTypeFile(MediaCategory category)
         {
             throw new NotImplementedException();
@@ -59,7 +57,6 @@ namespace mediastorage.Classes
 
         public void PlayFile(MediaFile file)
         {
-
             if (file.Category == MediaCategory.Music || file.Category == MediaCategory.Movie)
             {
                 RunPlayFile(file);
