@@ -12,7 +12,7 @@ namespace mediastorage.Classes
 
 
         public FileInfo File { get; private set; }
-        public Category Category { get; private set; }
+        public MediaCategory Category { get; private set; }
 
         public MediaFile(string nameFile)
         {
@@ -27,22 +27,22 @@ namespace mediastorage.Classes
 
             if (typeFile == ".mp3" || typeFile == ".wav")
             {
-                return Category.Music;
+                return MediaCategory.Music;
             }
             else if (typeFile == ".jpg" || typeFile == ".png" || typeFile == ".jpeg")
             {
-                return Category.Image;
+                return MediaCategory.Image;
             }
             else if (typeFile == ".avi" || typeFile == ".mpg" || typeFile == ".mp4")
             {
-                return Category.Movie;
+                return MediaCategory.Movie;
             }
             else
                 return null;
         }
 
 
-        public List<MediaFile> GetListByTypeFile(Category category)
+        public List<MediaFile> GetListByTypeFile(MediaCategory category)
         {
             throw new NotImplementedException();
         }
@@ -60,11 +60,11 @@ namespace mediastorage.Classes
         public void PlayFile(MediaFile file)
         {
 
-            if (file.TypeFile == Category.Music || file.TypeFile == Category.Movie)
+            if (file.Category == MediaCategory.Music || file.Category == MediaCategory.Movie)
             {
                 RunPlayFile(file);
             }
-            else if (file.TypeFile == Category.Image)
+            else if (file.Category == MediaCategory.Image)
             {
                 RunViewFile(file);
             }

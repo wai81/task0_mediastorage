@@ -1,41 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="mediastorage.BaseMediaStorage">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+  <Class Name="mediastorage.Classes.BaseMediaStorage" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
-      <FileName>BaseMediaStorage.cs</FileName>
+      <FileName>Classes\BaseMediaStorage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="mediastorage.PlayList">
-    <Position X="3" Y="2.75" Width="1.5" />
+  <Class Name="mediastorage.Classes.MediaFile">
+    <Position X="7" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACIAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAIAAAA=</HashCode>
-      <FileName>PlayList.cs</FileName>
+      <HashCode>AABAAAAAABAQAAoAAEABAAAAAAAEQAAAAAAAgAAACAA=</HashCode>
+      <FileName>Classes\MediaFile.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ItemsList" />
-    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="mediastorage.MediaFile">
-    <Position X="5.25" Y="2.75" Width="1.5" />
+  <Class Name="mediastorage.Classes.PlayList">
+    <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAQAAgAAAAJAAAAAgAEYAAAAAAAgAAAAAA=</HashCode>
-      <FileName>MediaFile.cs</FileName>
+      <HashCode>AAACAAAAAAACAAAAAAAAAAQAggAAAAAEAAAAAgAAAIA=</HashCode>
+      <FileName>Classes\PlayList.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="TypeFile" />
-    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
-    <Position X="0.75" Y="2" Width="1.5" />
-    <TypeIdentifier />
+  <Interface Name="mediastorage.Interfaces.IMediaFile">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAQAAIAAEABAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMediaFile.cs</FileName>
+    </TypeIdentifier>
   </Interface>
-  <Enum Name="mediastorage.TypeMediaFile">
-    <Position X="7.75" Y="1.5" Width="1.5" />
+  <Interface Name="mediastorage.Interfaces.IPlayList">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAggAAAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>Interfaces\IPlayList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="mediastorage.Enums.MediaCategory">
+    <Position X="9.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
-      <FileName>TypeMediaFile.cs</FileName>
+      <FileName>Enums\Category.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

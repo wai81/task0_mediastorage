@@ -10,7 +10,7 @@ namespace mediastorage.Interfaces
         
         List<MediaFile> GetAllFiles();
         
-        List<MediaFile> GetListByTypeFile(Category category);
+        List<MediaFile> GetListByTypeFile(MediaCategory category);
         
         void PlayFile(MediaFile file);
         
