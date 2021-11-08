@@ -20,7 +20,7 @@ namespace MediaStorage.Classes
             Category = GetTypeFile(File);
         }
 
-        private dynamic GetTypeFile(FileInfo file)
+        private MediaCategory GetTypeFile(FileInfo file)
         {
             string typeFile = file.Extension.ToLower();
 
@@ -37,7 +37,7 @@ namespace MediaStorage.Classes
                 return MediaCategory.Movie;
             }
             else
-                return null;
+                return MediaCategory.Unknown;
         }
 
         public List<MediaFile> GetListByTypeFile(MediaCategory category)

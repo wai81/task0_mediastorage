@@ -8,6 +8,7 @@ namespace MediaStorage.Enums
     {
         Music,
         Movie,
-        Image
+        Image,
+        Unknown
     }
 }
