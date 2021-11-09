@@ -6,13 +6,11 @@ namespace MediaStorage.Interfaces
 {
     public interface IPlayList
     {
-        PlayList AddItem(PlayListItems item, PlayList playList);
+        PlayList AddItem(PlayListItem item);
 
         List<PlayList> GetAllPlayLists();
 
-        PlayList RemoveItem(PlayListItems item, PlayList playList);
-
-        void RunPlayList(PlayList playList);
+        PlayList RemoveItem(PlayListItem item);
 
         List<PlayList> SeachPlayListByName(string name);
     }

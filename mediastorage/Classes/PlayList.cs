@@ -11,12 +11,12 @@ namespace MediaStorage.Classes
 
         public string Name { get; set; }
 
-        public List<PlayListItems> Items { get; private set; }
+        public List<PlayListItem> Items { get; private set; }
 
         public PlayList(string name)
         {
             Name = name;
-            Items = new List<PlayListItems>();
+            Items = new List<PlayListItem>();
         }
 
         public List<PlayList> GetAllPlayLists()
@@ -29,12 +29,12 @@ namespace MediaStorage.Classes
             throw new NotImplementedException();
         }
 
-        public PlayList AddItem(PlayListItems item, PlayList playList)
+        public PlayList AddItem(PlayListItem item)
         {
             throw new NotImplementedException();
         }
 
-        public PlayList RemoveItem(PlayListItems item, PlayList playList)
+        public PlayList RemoveItem(PlayListItem item)
         {
             throw new NotImplementedException();
         }

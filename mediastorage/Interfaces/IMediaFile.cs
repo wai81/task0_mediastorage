@@ -6,15 +6,15 @@ namespace MediaStorage.Interfaces
 {
     public interface IMediaFile
     {
-        MediaFile AddFile(string nameFile);
+        VideoFile AddFile(string nameFile);
 
-        List<MediaFile> GetAllFiles();
+        List<VideoFile> GetAllFiles();
 
-        List<MediaFile> GetListByTypeFile(MediaCategory category);
+        List<VideoFile> GetListByTypeFile(MediaCategory category);
 
-        void PlayFile(MediaFile file);
+        void PlayFile(VideoFile file);
 
-        void RemoveFile(MediaFile file);
+        void RemoveFile(VideoFile file);
 
         List<PlayList> SeachFile(string name);
     }
