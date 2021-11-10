@@ -1,4 +1,5 @@
 ﻿using MediaStorage.Enums;
+using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,15 +7,15 @@ using System.Text;
 
 namespace MediaStorage.Classes
 {
-    public class Media
+    public class Media : IMedia
     {
-        public List<PlayList> PlayList { get; private set; }
+        public List<PlayList> PlayList { get; private set; } = new List<PlayList>();
 
-        public List<VideoFile> VideoFile { get; private set; }
+        public List<VideoFile> VideoFileList { get; private set; } = new List<VideoFile>();
 
-        public List<ImageFile> ImageFile { get; private set; }
+        public List<ImageFile> ImageFileList { get; private set; } = new List<ImageFile>();
 
-        public List<MusicFile> MusicFile { get; private set; }
+        public List<MusicFile> MusicFileList { get; private set; } = new List<MusicFile>();
 
 
         public MediaCategory GetTypeFile(FileInfo file)
@@ -37,7 +38,7 @@ namespace MediaStorage.Classes
                 return MediaCategory.Unknown;
         }
 
-        public void AddMediaFile (string item)
+        public void AddMediaFile(string item)
         {
             var File = new FileInfo(item);
 
@@ -45,21 +46,25 @@ namespace MediaStorage.Classes
 
             if (category == MediaCategory.Image)
             {
-                throw new NotImplementedException();
+                var mediaFile = AddImage(item);
+                ImageFileList.Add(mediaFile);
             }
             else if (category == MediaCategory.Movie)
             {
-                throw new NotImplementedException();
+                var mediaFile = AddImage(item);
+                ImageFileList.Add(mediaFile);
             }
             else if (category == MediaCategory.Music)
             {
-                throw new NotImplementedException();
+                var mediaFile = AddImage(item);
+                ImageFileList.Add(mediaFile);
             }
             else
                 throw new NotImplementedException();
-            
+
         }
 
+       
         public void DeleteMediaFile(string item)
         {
 
@@ -70,7 +75,7 @@ namespace MediaStorage.Classes
             throw new NotImplementedException();
         }
 
-        public List<PlayList> DelitePlayList(PlayList playList)
+        public void DelitePlayList(PlayList playList)
         {
             throw new NotImplementedException();
         }
@@ -79,6 +84,25 @@ namespace MediaStorage.Classes
         {
             throw new NotImplementedException();
         }
+
+        private ImageFile AddImage(string file)
+        {
+            ImageFile img = new ImageFile(file);
+            return img;
+        }
+
+        private VideoFile AddVideo(string file)
+        {
+            VideoFile video = new VideoFile(file);
+            return video;
+        }
+
+        private MusicFile AddMusic(string file)
+        {
+            MusicFile music = new MusicFile(file);
+            return music;
+        }
+
 
     }
 }

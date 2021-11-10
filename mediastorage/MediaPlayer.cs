@@ -1,31 +1,38 @@
-﻿using MediaStorage.Classes;
-using MediaStorage.Interfaces;
+﻿using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MediaStorage
 {
-    public abstract class MediaPlayer
+    abstract class MediaPlaye : IMediaPlayer
     {
-        Media MediaList { get; set; }
+                       
+        public IMedia Media { get; set; }
 
-        public MediaPlayer()
+        public  IMedia Play(string file)
         {
-
+            throw new NotImplementedException();
         }
 
-        public abstract IMediaFile Play(string file);
+        public void Play(IMedia item)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public abstract Pause();
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
 
-        //public abstract Stop();
+        public void Pause() 
+        {
+            throw new NotImplementedException();
+        }
 
-        //public virtual StepBackward()
-        //{
-        //    var seekTo =0;
-        //    return seekTo;
-        //}
-    
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

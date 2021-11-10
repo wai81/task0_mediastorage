@@ -9,6 +9,9 @@ namespace MediaStorage.Classes
 {
     public class VideoFile : BaseMedia
     {
-
+        public VideoFile(string nameFile)
+        {
+            NameFile = nameFile;
+        }
     }
 }

@@ -5,6 +5,9 @@ namespace MediaStorage.Classes
 {
     public class MusicFile : BaseMedia
     {
-       
+        public MusicFile(string nameFile)
+        {
+            NameFile = nameFile;
+        }
     }
 }

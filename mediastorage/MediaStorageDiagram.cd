@@ -21,6 +21,7 @@
       <HashCode>gABAAAAAAAIABAAAAgAAAABQAAAAACAAAAAAgAgAAAA=</HashCode>
       <FileName>Classes\Media.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaStorage.Classes.ImageFile">
     <Position X="5.25" Y="3.75" Width="1.5" />
