@@ -1,4 +1,4 @@
-﻿using MediaStorage.Interfaces;
+﻿using MediaStorage.Classes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,14 +8,14 @@ namespace MediaStorage
     abstract class MediaPlaye : IMediaPlayer
     {
                        
-        public IMedia Media { get; set; }
+        public Mediateka Media { get; set; }
 
-        public  IMedia Play(string file)
+        public Mediateka Play(string file)
         {
             throw new NotImplementedException();
         }
 
-        public void Play(IMedia item)
+        public void Play(Mediateka item)
         {
             throw new NotImplementedException();
         }

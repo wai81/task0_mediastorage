@@ -1,5 +1,4 @@
 ﻿using MediaStorage.Enums;
-using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +6,7 @@ using System.Text;
 
 namespace MediaStorage.Classes
 {
-    public class Media : IMedia
+    public class Mediateka 
     {
         public List<PlayList> PlayList { get; private set; } = new List<PlayList>();
 
@@ -80,7 +79,7 @@ namespace MediaStorage.Classes
             throw new NotImplementedException();
         }
 
-        public List<Media> SearhByName(string name)
+        public List<Mediateka> SearhByName(string name)
         {
             throw new NotImplementedException();
         }

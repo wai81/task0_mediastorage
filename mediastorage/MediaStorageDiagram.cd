@@ -18,7 +18,7 @@
   <Class Name="MediaStorage.Classes.Media">
     <Position X="2.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gABAAAAAAAIABAAAAgAAAABQAAAAACAAAAAAgAgAAAA=</HashCode>
+      <HashCode>AAAIAAAAAAIEBAAAIgAAAARQAAAAACAAQAAAgAACAAA=</HashCode>
       <FileName>Classes\Media.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -50,6 +50,14 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\PlayListItem.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="MediaStorage.MediaPlaye">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAQ=</HashCode>
+      <FileName>MediaPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="MediaStorage.Interfaces.IPlayList">
     <Position X="14.25" Y="3.75" Width="1.5" />

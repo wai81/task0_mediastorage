@@ -1,11 +1,10 @@
-﻿using MediaStorage.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MediaStorage.Classes
 {
-    public class PlayList : IPlayList
+    public class PlayList 
     {
         public Guid Id { get; private set; }
 
