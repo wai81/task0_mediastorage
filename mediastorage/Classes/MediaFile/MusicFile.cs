@@ -1,6 +1,4 @@
-﻿using MediaStorage.Enums;
-using System;
-using System.IO;
+﻿using System;
 
 namespace MediaStorage.Classes.MediaFile
 {
