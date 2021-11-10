@@ -6,9 +6,14 @@ namespace MediaStorage.Classes.MediaFile
 {
     public class ImageFile : BaseMedia
     {
-        public ImageFile(string nameFile)
+        public ImageFile(Guid id, string nameFile) : base(id, nameFile)
         {
-            NameFile = nameFile;
+
+        }
+
+        public override void Play()
+        {
+            Console.WriteLine($"Viewe image file: {NameFile}");
         }
     }
 }

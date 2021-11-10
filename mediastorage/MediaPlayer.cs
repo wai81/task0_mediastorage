@@ -5,34 +5,24 @@ using System.Text;
 
 namespace MediaStorage
 {
-    abstract class MediaPlaye : IMediaPlayer
+    abstract class MediaPlayer 
     {
-                       
-        public Mediateka Media { get; set; }
-
-        public Mediateka Play(string file)
+       public void Paly(IPlayList playList)       
         {
-            throw new NotImplementedException();
+            foreach (var item in playList.GetMediaItems())
+            {
+                item.Play();
+            }      
         }
 
-        public void Play(Mediateka item)
+       public void Play(BaseMedia item)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Play()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Pause() 
-        {
-            throw new NotImplementedException();
+            item.Play();
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

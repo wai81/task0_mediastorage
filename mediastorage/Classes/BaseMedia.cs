@@ -13,7 +13,13 @@ namespace MediaStorage.Classes
 
         public string NameFile { get; set; }
 
-        
+        public BaseMedia(Guid id, string nameFile)
+        {
+            Id = id;
+            NameFile = nameFile;
+        }
+
+        public abstract void Play();        
     }
    
 }

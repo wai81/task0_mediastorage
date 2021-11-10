@@ -8,9 +8,13 @@ namespace MediaStorage.Classes.MediaFile
 {
     public class VideoFile : BaseMedia
     {
-        public VideoFile(string nameFile)
+        public VideoFile(Guid id, string nameFile) : base(id, nameFile)
         {
-            NameFile = nameFile;
+        }
+
+        public override void Play()
+        {
+            Console.WriteLine($"Viewe video file: {NameFile}");
         }
     }
 }

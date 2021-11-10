@@ -4,41 +4,42 @@ using System.Text;
 
 namespace MediaStorage.Classes
 {
-    public class PlayList 
+    public class PlayList : IPlayList
     {
         public Guid Id { get; private set; }
 
         public string Name { get; set; }
 
-        public List<PlayListItem> Items { get; private set; }
+        public List<BaseMedia> Items { get; private set; }
 
         public PlayList(string name)
         {
             Name = name;
-            Items = new List<PlayListItem>();
+            Items = new List<BaseMedia>();
         }
 
-        public List<PlayList> GetAllPlayLists()
+
+        public void AddItem(BaseMedia item)
+        {
+            Items.Add(item);
+        }
+
+        public void RemoveItem(BaseMedia item)
+        {
+            Items.Remove(item);
+        }
+
+        public List<BaseMedia> GetMediaItems()
+        {
+            return Items;
+        }
+
+        public PlayList SeachPlayListByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public List<PlayList> SeachPlayListByName(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public PlayList AddItem(PlayListItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public PlayList RemoveItem(PlayListItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RunPlayList(PlayList playList)
+        public BaseMedia SeachItemByName(string name)
         {
             throw new NotImplementedException();
         }
