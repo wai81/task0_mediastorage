@@ -1,4 +1,5 @@
-﻿using MediaStorage.Enums;
+﻿using MediaStorage.Classes.MediaFile;
+using MediaStorage.Enums;
 using System;
 using System.Collections.Generic;
 using System.IO;

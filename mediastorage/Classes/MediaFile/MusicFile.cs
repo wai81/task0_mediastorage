@@ -1,7 +1,7 @@
 ﻿using MediaStorage.Enums;
 using System.IO;
 
-namespace MediaStorage.Classes
+namespace MediaStorage.Classes.MediaFile
 {
     public class MusicFile : BaseMedia
     {

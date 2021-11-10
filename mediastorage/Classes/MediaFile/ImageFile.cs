@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MediaStorage.Classes
+namespace MediaStorage.Classes.MediaFile
 {
     public class ImageFile : BaseMedia
     {
