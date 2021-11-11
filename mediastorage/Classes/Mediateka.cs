@@ -11,6 +11,11 @@ namespace MediaStorage.Classes
 
         public List<IPlayList> PlayLists { get; private set; } = new List<IPlayList>();
 
+        public Mediateka()
+        {
+            
+        }
+
         public Mediateka(List<BaseMedia> mediaFiles)
         {
             MediaFiles = mediaFiles;
