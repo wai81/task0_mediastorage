@@ -34,6 +34,7 @@ namespace MediaStorage
             Console.WriteLine("---Paly from Mediateka-------------");
 
             mediateka.Plаy(playList1);
+
             mediateka.Plаy(file1);
 
         }
