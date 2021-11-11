@@ -4,7 +4,7 @@ namespace MediaStorage.Classes.MediaFile
 {
     public class MusicFile : BaseMedia
     {
-        public MusicFile(Guid id, string nameFile) : base(id, nameFile)
+        public MusicFile(string nameFile) : base(nameFile)
         {
         }
 

@@ -9,9 +9,9 @@ namespace MediaStorage.Classes
 
         public string NameFile { get; set; }
 
-        public BaseMedia(Guid id, string nameFile)
+        public BaseMedia(string nameFile)
         {
-            Id = id;
+            Id = new Guid();
             NameFile = nameFile;
         }
 

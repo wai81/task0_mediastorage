@@ -13,24 +13,14 @@
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA=</HashCode>
       <FileName>MediaPlayer.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaStorage.Classes.PlayList">
-    <Position X="13.25" Y="0.5" Width="1.75" />
+    <Position X="11.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAACAAIAAAQACAAAAAAAAAQAgAAAAAAEAAAAAgAAAAA=</HashCode>
       <FileName>Classes\PlayList.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="MediaStorage.Classes.Mediateka">
-    <Position X="11" Y="0.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>EABAAAAAAAIAAAIAAAAAAAAQAgAAEAAAAAAAAgAAAAA=</HashCode>
-      <FileName>Classes\Mediateka.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="MediaFiles" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaStorage.Classes.MediaFile.ImageFile">
@@ -55,10 +45,17 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="MediaStorage.Classes.IPlayList">
-    <Position X="13.25" Y="3.5" Width="1.75" />
+    <Position X="11.25" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAQAAAAAAAAAAAAAgAAAAAAEAAAAAgAAAAA=</HashCode>
       <FileName>Interfaces\IPlayList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MediaStorage.Interfaces.IMediaPlayer">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMediaPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

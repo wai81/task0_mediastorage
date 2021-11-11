@@ -6,7 +6,7 @@ namespace MediaStorage.Classes.MediaFile
 {
     public class ImageFile : BaseMedia
     {
-        public ImageFile(Guid id, string nameFile) : base(id, nameFile)
+        public ImageFile(string nameFile) : base(nameFile)
         {
 
         }
