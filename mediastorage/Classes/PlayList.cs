@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MediaStorage.Classes
 {
     public class PlayList : IPlayList
     {
         public Guid Id { get; private set; }
-
         public string Name { get; set; }
-
         public List<BaseMedia> Items { get; private set; }
 
         public PlayList(string name)

@@ -1,14 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MediaStorage.Classes.MediaFile
 {
     public class ImageFile : BaseMedia
     {
-        public ImageFile(string nameFile) : base(nameFile)
-        {
+        public string Subject { get; protected set; }
+        public int Width { get; protected set; }
+        public int Height { get; protected set; }
 
+        public ImageFile(string nameFile, string subject, int width, int height ) : base(nameFile)
+        {
+            Subject = subject;
+            Width = width;
+            Height = height;
         }
 
         public override void Play()

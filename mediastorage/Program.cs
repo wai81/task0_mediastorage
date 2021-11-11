@@ -11,11 +11,11 @@ namespace MediaStorage
         {
             IMediateka mediateka = new Mediateka();
             
-            BaseMedia file1 = new ImageFile(nameFile: "image_01.jpg");
-            BaseMedia file2 = new MusicFile(nameFile: "01_Rammstein_Muter.mp3");
-            BaseMedia file3 = new MusicFile(nameFile: "03_Rammstein_Duhastmish.mp3");
-            BaseMedia file4 = new MusicFile(nameFile: "04_Rammstein_Ich_Will.mp3");
-            BaseMedia file5 = new VideoFile(nameFile: "House_s1_01.avi");
+            BaseMedia file1 = new ImageFile(nameFile: "image_01.jpg", subject: "Nature", height: 1200, width: 720);
+            BaseMedia file2 = new MusicFile(nameFile: "01_Rammstein_Muter.mp3", artist: "Rammstein",genre: "Industrial - metal");
+            BaseMedia file3 = new MusicFile(nameFile: "03_Rammstein_Duhastmish.mp3", artist: "Rammstein", genre: "Industrial - metal");
+            BaseMedia file4 = new MusicFile(nameFile: "04_Rammstein_Ich_Will.mp3", artist: "Rammstein", genre: "Industrial - metal");
+            BaseMedia file5 = new VideoFile(nameFile: "House_s1_01.avi", year:"2010", country: "USA",  genre: "TV series");
             
             IPlayList playList1 = new PlayList(name: "New playlist");
 
@@ -36,7 +36,6 @@ namespace MediaStorage
             mediateka.Plаy(playList1);
 
             mediateka.Plаy(file1);
-
         }
     }
 }

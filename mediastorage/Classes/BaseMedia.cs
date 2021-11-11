@@ -6,8 +6,7 @@ namespace MediaStorage.Classes
 
     {
         public Guid Id { get; private set; }
-
-        public string NameFile { get; set; }
+        public string NameFile { get; private set; }
 
         public BaseMedia(string nameFile)
         {
@@ -17,7 +16,5 @@ namespace MediaStorage.Classes
 
         public abstract void Play();
         public abstract void Stop();
-
     }
-   
 }

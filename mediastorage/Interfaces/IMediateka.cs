@@ -4,7 +4,6 @@ namespace MediaStorage.Classes
 {
     public interface IMediateka
     {
-       
         void AddFile(BaseMedia file);
         void AddPlayList(IPlayList playList);
         void Plаy(BaseMedia item);
@@ -13,6 +12,6 @@ namespace MediaStorage.Classes
         void RemovePlayList(IPlayList playList);
         BaseMedia SeachFileByName(string name);
         IPlayList SeachPlayListByName(string name);
-        void Stop();
+        void Stop(BaseMedia item);
     }
 }

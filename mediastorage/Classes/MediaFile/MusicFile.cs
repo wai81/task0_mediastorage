@@ -4,8 +4,13 @@ namespace MediaStorage.Classes.MediaFile
 {
     public class MusicFile : BaseMedia
     {
-        public MusicFile(string nameFile) : base(nameFile)
+        public string Artist { get; protected set; }
+        public string Genre { get; protected set; }
+
+        public MusicFile(string nameFile, string artist, string genre) : base(nameFile)
         {
+            Artist = artist;
+            Genre = genre;
         }
 
         public override void Play()

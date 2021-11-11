@@ -1,14 +1,12 @@
 ﻿using MediaStorage.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MediaStorage.Classes
 {
     public class Mediateka : IMediateka
     {
         public List<BaseMedia> MediaFiles { get; private set; } = new List<BaseMedia>();
-
         public List<IPlayList> PlayLists { get; private set; } = new List<IPlayList>();
 
         public Mediateka()
@@ -56,10 +54,10 @@ namespace MediaStorage.Classes
             throw new NotImplementedException();
         }
 
-        public void Stop()
+        public void Stop(BaseMedia item)
         {
             IMediaPlayer player = new MediaPlayer();
-            player.Stop();
+            player.Stop(item);
         }
 
         public void Plаy(BaseMedia item)
