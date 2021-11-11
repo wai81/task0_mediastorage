@@ -8,9 +8,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="MediaStorage.Classes.Mediateka">
-    <Position X="14" Y="1" Width="1.5" />
+    <Position X="12.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EABAAAAAAAIBAAIAAAAAAAAQAgAAEAAAIAAAAgAAAAA=</HashCode>
+      <HashCode>EABAAAAAAAIAAQIAAAAAAAAQAgAAEAAAIAAAAgAAAAA=</HashCode>
       <FileName>Classes\Mediateka.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -37,7 +37,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="MediaStorage.Classes.PlayList">
-    <Position X="12.25" Y="1" Width="1.5" />
+    <Position X="10.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAIAAAQACAAAAAAAAAQAgAAAAAAEAAAAAgAAAAA=</HashCode>
       <FileName>Classes\PlayList.cs</FileName>
@@ -45,29 +45,29 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="MediaStorage.MediaPlayer">
-    <Position X="3.5" Y="1.25" Width="1.5" />
+    <Position X="14" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>MediaPlayer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="MediaStorage.Interfaces.IMediaPlayer">
-    <Position X="1.75" Y="1.25" Width="1.5" />
+    <Position X="14" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IMediaPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="MediaStorage.Classes.IMediateka">
-    <Position X="14" Y="4.5" Width="1.5" />
+    <Position X="12.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\IMediateka.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="MediaStorage.Classes.IPlayList">
-    <Position X="12.25" Y="4.5" Width="1.5" />
+    <Position X="10.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAQAAAAAAAAAAAAAgAAAAAAEAAAAAgAAAAA=</HashCode>
       <FileName>Interfaces\IPlayList.cs</FileName>

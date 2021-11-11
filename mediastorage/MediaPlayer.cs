@@ -8,7 +8,8 @@ namespace MediaStorage
 {
     public class MediaPlayer : IMediaPlayer
     {
-        public void Paly(IPlayList playList)
+        
+        public void Plаy(IPlayList playList)
         {
             foreach (var item in playList.GetMediaItems())
             {
@@ -16,14 +17,15 @@ namespace MediaStorage
             }
         }
 
-        public void Paly(BaseMedia item)
+        public void Plаy(BaseMedia item)
         {
             item.Play();
         }
 
-        public void Stop()
+        
+        public void Stop(BaseMedia item)
         {
-
+            item.Stop();
         }
     }
 }

@@ -7,8 +7,8 @@ namespace MediaStorage.Classes
        
         void AddFile(BaseMedia file);
         void AddPlayList(IPlayList playList);
-        void Paly(BaseMedia item);
-        void Paly(IPlayList playList);
+        void Plаy(BaseMedia item);
+        void Plаy(IPlayList playList);
         void RemoveFile(BaseMedia file);
         void RemovePlayList(IPlayList playList);
         BaseMedia SeachFileByName(string name);

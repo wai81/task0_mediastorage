@@ -18,7 +18,6 @@ namespace MediaStorage.Classes
             Items = new List<BaseMedia>();
         }
 
-
         public void AddItem(BaseMedia item)
         {
             Items.Add(item);

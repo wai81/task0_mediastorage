@@ -56,23 +56,22 @@ namespace MediaStorage.Classes
             throw new NotImplementedException();
         }
 
-        public void Paly(IPlayList playList)
-        {
-            IMediaPlayer player = new MediaPlayer();
-            player.Paly(playList);
-
-        }
-
-        public void Paly(BaseMedia item)
-        {
-            IMediaPlayer player = new MediaPlayer();
-            player.Paly(item);
-        }
-
         public void Stop()
         {
             IMediaPlayer player = new MediaPlayer();
             player.Stop();
+        }
+
+        public void Plаy(BaseMedia item)
+        {
+            IMediaPlayer player = new MediaPlayer();
+            player.Plаy(item);
+        }
+
+        public void Plаy(IPlayList playList)
+        {
+            IMediaPlayer player = new MediaPlayer();
+            player.Plаy(playList);
         }
     }
 }

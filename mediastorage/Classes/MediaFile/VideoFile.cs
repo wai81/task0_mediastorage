@@ -12,5 +12,10 @@ namespace MediaStorage.Classes.MediaFile
         {
             Console.WriteLine($"Viewe video file: {NameFile}");
         }
+
+        public override void Stop()
+        {
+            Console.WriteLine($"Stop play video file: {NameFile}");
+        }
     }
 }

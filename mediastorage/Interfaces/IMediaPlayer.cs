@@ -4,10 +4,9 @@ namespace MediaStorage.Interfaces
 {
     interface IMediaPlayer
     {
-        void Paly(IPlayList playList);
+        void Plаy(IPlayList playList);
+        void Plаy(BaseMedia item);
+        void Stop(BaseMedia item);
 
-        void Paly(BaseMedia item);
-
-        void Stop();
     }
 }

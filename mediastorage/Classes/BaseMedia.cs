@@ -15,7 +15,9 @@ namespace MediaStorage.Classes
             NameFile = nameFile;
         }
 
-        public abstract void Play();        
+        public abstract void Play();
+        public abstract void Stop();
+
     }
    
 }

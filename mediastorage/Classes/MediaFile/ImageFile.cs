@@ -15,5 +15,10 @@ namespace MediaStorage.Classes.MediaFile
         {
             Console.WriteLine($"Viewe image file: {NameFile}");
         }
+
+        public override void Stop()
+        {
+            Console.WriteLine($"Close image file: {NameFile}");
+        }
     }
 }
