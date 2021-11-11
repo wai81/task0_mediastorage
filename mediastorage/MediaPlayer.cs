@@ -16,7 +16,7 @@ namespace MediaStorage
             }
         }
 
-        public void Play(BaseMedia item)
+        public void Paly(BaseMedia item)
         {
             item.Play();
         }
